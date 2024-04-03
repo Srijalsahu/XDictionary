@@ -31,12 +31,8 @@ const XDictionary = () => {
         placeholder="Enter a word"
       />
       <button onClick={handleSearch}>Search</button>
-      {definition && (
-        <div>
-          <h2>Definition:</h2>
-          <p>{definition}</p>
-        </div>
-      )}
+      <h2>Definition:</h2>
+      {definition && <p>{definition}</p>}
     </div>
   );
 };
